@@ -1,0 +1,10 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: green;
+}
+
+.main a img {
+	width:300px;
+}
