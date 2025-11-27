@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+dnf update -y
+dnf install -y git httpd php php-pdo  nc
+# Clone repository
+git clone https://github.com/lauvshree/greenfarmanalytics.git
+mv greenfarmanalytics/* /var/www/html/
+systemctl start httpd
+systemctl enable httpd
+echo "Setup complete!"
